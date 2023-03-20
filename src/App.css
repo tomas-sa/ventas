@@ -1,0 +1,236 @@
+.App{
+    background-color: #f1f1f1;
+    height: 100vh;
+}
+.mainSite{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: first baseline;
+    background-color: #f1f1f1;
+    color: aliceblue;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.hero{
+    display: flex;
+    flex-direction:column;
+    margin-top: 170px;
+    height: 300px;
+    width: 220px;
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+    border-radius: 10px;
+    cursor: default;
+    -webkit-box-shadow: -12px 11px 22px 0px rgba(209, 209, 209, 1);
+        -moz-box-shadow: -12px 11px 22px 0px rgba(209, 209, 209, 1);
+        box-shadow: -12px 11px 22px 0px rgb(209, 209, 209);
+}
+.modal{
+    background-color: #f1f1f1;
+    position: fixed;
+    left: 50%;
+    top: 60%;
+    translate: -50% -50%;
+    width: 400px;
+    padding-bottom: 30px;
+    color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.modalBack{
+    position: fixed;
+    background-color: #1f1f1f;
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+}
+.navBox{
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
+    height: 120px;
+}
+.header{
+    padding-left: 50px;
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 4rem;
+}
+.carritoCantidad{
+    padding-right: 100px;
+}
+.carritoBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.fa-cart-shopping{
+    cursor: pointer;
+}
+.CartBody{
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 200px repeat(auto-fill, 200px) 200px;
+    grid-auto-rows: 400px;
+    justify-content: center;
+    padding: 70px 0;
+}
+.imgBox{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.imgHeroBox{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+}
+.imgMain{
+    height: 100px;
+    padding: 20px 0;
+}
+.tituloProducto{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    width: 90%;
+    text-align: center;
+}
+.tituloProductoBox{
+    height: 100px;
+    width: 100%;
+}
+.precioProducto{
+    margin-left: 10px;
+}
+.link1, .link2{
+    text-decoration: none;
+    color: #1f1f1f;
+}
+.link2{
+    cursor: default;
+}
+.btnBuy{
+    padding: 5px 10px;
+}
+.boxCart{
+    margin-top: 100px;
+    background-color: white;
+    -webkit-box-shadow: -12px 11px 22px 0px rgba(209, 209, 209, 1);
+    -moz-box-shadow: -12px 11px 22px 0px rgba(209, 209, 209, 1);
+    box-shadow: -12px 11px 22px 0px rgb(209, 209, 209);
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imgBoxCart{
+    text-align: center;
+}
+.categorias{
+    width: 100vw;
+    position: fixed;
+    top: 100px;
+    left: 0;
+}
+.listaCategorias{
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #1f1f1f;
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.itemLista{
+    list-style-type: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    position: relative;
+}
+.itemLista::after{
+    content: '';
+    height: 1px;
+    width: 100%;
+    background-color: #FF2E63;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scale(0, 0.5);
+    transition: transform 0.3s ease;
+}
+.itemLista:hover::after{
+    transform: scale(1, 0.5);
+}
+.stars{
+    width: 100px;
+    height: 20px;
+    margin-left: 10px;
+}
+.infoBox{
+    display: flex;
+    justify-content: space-between;
+}
+.controlCantidadBox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 20px;
+}
+.precioFinal{
+    margin-top: 100px;
+}
+
+.each-slide-effect>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 400px;
+    margin-top: 120px;
+    position: relative;
+}
+.heroContainer{
+    height: 150vh;
+    background-color: #f1f1f1;
+}
+.containerCompra{
+    background-color: #f1f1f1;
+    color: #1f1f1f;
+    padding: 2px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(59, 59, 59);
+}
+.link3{
+    text-decoration: none;
+    position: absolute;
+    left: 10%;
+    bottom: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
